@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+      "target": "es5",                          // Targeting ES5 for broader compatibility
+      "module": "es6",                          // Using ES6 module system
+      "moduleResolution": "node",               // Resolve modules as Node.js would
+      "strict": true,                           // Enable strict type-checking options
+      "esModuleInterop": true,                  // Enable interoperability between CommonJS and ES Modules
+      "skipLibCheck": true,                     // Skip type checking of all declaration files (to improve build performance)
+      "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file names
+      "outDir": "./dist",                       // Output directory for compiled files
+      "rootDir": "./src",                       // Root directory of source files
+      "baseUrl": ".",                           // Base directory to resolve non-relative module names
+      "paths": {
+        "@speckle/viewer": ["node_modules/@speckle/viewer"]
+      }                                         // Explicitly map @speckle/viewer module
+    },
+    "include": [
+      "src/**/*"                                // Include all TypeScript files in the src directory
+    ],
+    "exclude": [
+      "node_modules"                            // Exclude node_modules from the compilation
+    ]
+  }
+  
